@@ -6,7 +6,7 @@ import BarraNavegacion from './components/NavBar' ;
 class app extends React.Component{
   render(){
     const onAdd = ( quantity ) => {
-            console.log ( 'Añadiste'+{quantity}+'unidades' ) 
+            alert("Has añadido "+ quantity+" productos al carrito" ) 
   }                        
     return(
       <div>
