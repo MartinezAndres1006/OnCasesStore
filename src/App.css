@@ -8,3 +8,18 @@
 .textoItem{
   color: red;
 }
+
+.card{
+  width: 16em;
+  margin:25px;
+}
+.btns{
+  margin: 2px;
+}
+.contador{
+  font-size: 17px;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+}

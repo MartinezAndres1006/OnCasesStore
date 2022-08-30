@@ -1,9 +1,9 @@
 import React from 'react'
 
- export const carrito = () => {
+ export const cart = () => {
   return (
     <i className="bi bi-bag"></i>
   )
 }
 
-export default carrito
+export default cart

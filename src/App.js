@@ -1,14 +1,17 @@
 
 import React from 'react';
 import './App.css';
+import Contador from './components/itemCount'
 import BarraNavegacion from './components/NavBar' ;
-import Title from './components/itemListContainer'
 class app extends React.Component{
   render(){
+    const onAdd = ( quantity ) => {
+            console.log ( 'Añadiste'+{quantity}+'unidades' ) 
+  }                        
     return(
       <div>
         <BarraNavegacion />
-        <Title greeting="On cases Store" />
+        <Contador initial={1} stock={6} onAdd={onAdd}/>
       </div>
 
     )

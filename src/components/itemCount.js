@@ -1,0 +1,28 @@
+import React,{useState} from 'react'
+
+export const itemCount = ({initial,stock}) => {
+  const [ count , setCount ]=useState( initial ) ;
+  
+ const decrease=() =>{
+  setCount(count-1)
+ }
+ 
+ const increase=() =>{
+  setCount(count+1)
+ }
+  return (
+    <div className="card">
+  <div className="card-body">
+    <h5 className="card-title">Funda A71</h5>
+    <p className="card-text">Excelente funda para el samsung a71 Lorem ipsum</p>
+    <button className='btns btn btn-dark' onClick={decrease} disabled={count<=0}>-</button>
+    <span className='contador'>{count}</span>
+    <button className='btns btn btn-dark' onClick={increase}disabled={count>=stock}>+</button>
+    <button className='btns btn btn-dark'>Agregar al carrito</button>
+
+  </div>
+</div>
+  )
+}
+
+export default itemCount
