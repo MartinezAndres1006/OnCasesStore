@@ -12,6 +12,10 @@
 .card{
   width: 16em;
   margin:25px;
+  display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
 }
 .btns{
   margin: 2px;
@@ -22,4 +26,14 @@
 .botones{
   display: flex;
   justify-content: center;
+}
+.img__Product{
+  width: 230px;
+  height: 250px;
+}
+.contenedor__card{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
 }
