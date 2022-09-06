@@ -11,7 +11,7 @@ export const ItemCount = ({initial,stock,onAdd}) => {
   setCount(count+1)
  }
   return (
-    <div className="card">
+    <div >
   <div className="card-body">
     <button className='btns btn btn-dark' onClick={decrease} disabled={count<=0}>-</button>
     <span className='contador'>{count}</span>

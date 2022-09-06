@@ -12,9 +12,9 @@ const BarraNavegacion= () =>{
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav linkNav">
         <a className="nav-link" href="#">Inicio</a>
-        <a className="nav-link" href="#">Catalogo</a>
-        <a className="nav-link" href="#">Envios</a>
-        <a className="nav-link" href="#">Ubicacion</a>
+        <a className="nav-link" href="#">Fundas Iphone 11</a>
+        <a className="nav-link" href="#">Fundas Iphone se</a>
+        <a className="nav-link" href="#">Fundas Iphone 13</a>
         <a className="nav-link" href="#"><CarritoCompras/></a>
 
       </div>

@@ -16,6 +16,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: flex-start;
+    text-align: center;
 }
 .btns{
   margin: 2px;
@@ -36,4 +37,15 @@
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: flex-start;
+}
+.Contenedor__Productos{
+  display: flex;
+}
+
+.card__detail{
+  border-radius: 6px;
+  border: 2px solid #7c7c7c56;
+}
+.precio{
+  font-size: 35px;
 }
