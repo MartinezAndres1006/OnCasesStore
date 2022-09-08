@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './detail.css'
 const ItemDetail = ({data}) => {
   return (
     <div className="card__detail">
