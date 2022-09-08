@@ -20,7 +20,7 @@ class app extends React.Component{
           <Route path='/' element={<CarouselFadeExample/>}/>
           <Route path='/catalogo' element={<ItemListContainer/>}/>
           <Route path='/category/:categoriaId' element={<ItemListContainer />}/>
-          <Route path='/detail' element={<ItemDetailContainer/>}/> 
+          <Route path='/detail/:detailId' element={<ItemDetailContainer/>}/> 
           <Route path='/cart' element={<Cart/>}/>
         </Routes>
         
