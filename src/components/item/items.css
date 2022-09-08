@@ -1,0 +1,33 @@
+.card{
+    width: 16em;
+    margin:25px;
+    display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: flex-start;
+      text-align: center;
+  }
+  .btns{
+    margin: 2px;
+  }
+  .contador{
+    font-size: 17px;
+  }
+  .botones{
+    display: flex;
+    justify-content: center;
+  }
+  .img__Product{
+    width: 230px;
+    height: 250px;
+  }
+  .contenedor__card{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+  }
+  .Contenedor__Productos{
+    display: flex;
+    flex-wrap: wrap;
+  }

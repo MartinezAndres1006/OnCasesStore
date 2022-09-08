@@ -5,7 +5,7 @@ const ItemDetail = ({data}) => {
     <div className="card__detail">
   <div className="row g-0">
     <div className="col-md-4">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_628254-MLA48795649177_012022-F.webp" className="img-fluid rounded-start img__detail" alt="..."/>
+      <img src={data.image} className="img-fluid rounded-start img__detail" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
