@@ -27,9 +27,11 @@ const ItemDetailContainer = () => {
             },500)
         });
     
-    getData.then(res=> setData(res.find(product=>product.id===(detailId))))
-    })
-  
+        getData.then(res=> {
+            const detalle = res.find(product => product.id===(detailId))
+            setData(detalle)
+        })
+        })
   
   
     return (

@@ -7,7 +7,7 @@ import BarraNavegacion from './components/inicio/NavBar' ;
 import ItemListContainer from './components/item/itemListContainer';
 import ItemDetailContainer from './components/details/itemDetailContainer';
 import Cart from './components/cart/Cart';
-import CartProvider from './context/cartContext';
+import CartProv from './context/cartContext';
 
 
 class app extends React.Component{
@@ -18,7 +18,7 @@ class app extends React.Component{
     return(
       <div>
         <BrowserRouter>
-          <CartProvider>
+          <CartProv>
           <BarraNavegacion />
           <Routes>
             <Route path='/' element={<CarouselFadeExample/>}/>
@@ -27,7 +27,7 @@ class app extends React.Component{
             <Route path='/detail/:detailId' element={<ItemDetailContainer/>}/> 
             <Route path='/cart' element={<Cart/>}/>
           </Routes>
-          </CartProvider>
+          </CartProv>
         </BrowserRouter>
       </div>
 
