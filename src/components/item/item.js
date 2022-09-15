@@ -2,7 +2,6 @@ import React from 'react'
 import "./items.css"
 import { Link } from 'react-router-dom'
 const Item = ({pedido}) => {
-       
   return (
         <div className='card'>
             <div className='card-body'>
