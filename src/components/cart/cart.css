@@ -1,0 +1,17 @@
+.titulo__vacio{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        text-shadow: 0 0 15px #0000;
+      
+}
+.parrafo__vacio{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        color: #3838385d;
+}
+.boton_seguir{
+    display: flex;
+    justify-content: center;
+}

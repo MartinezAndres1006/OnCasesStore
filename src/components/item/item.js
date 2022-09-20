@@ -3,7 +3,7 @@ import "./items.css"
 import { Link } from 'react-router-dom'
 const Item = ({pedido}) => {
   return (
-        <div className='card'>
+        <div className='card container-fluid'>
             <div className='card-body'>
         <img src={pedido.image} alt='' className='img__Product'/>
         <h5 className="card-title">{pedido.title}</h5>

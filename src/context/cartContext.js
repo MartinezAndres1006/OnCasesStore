@@ -27,8 +27,17 @@ const removeCart = (id) => {
   return setcart(cart.filter((products) => products.id !== id));
 };
 
+
+const preciototal=()=>{
+return cart.reduce((prev,act)=>prev+act.quantity * act.price,0)
+}
+
+const productTotal=() =>{
+  return cart.reduce((juntar,productoAct)=>juntar+productoAct.quantity,0)
+}
+
   return (
-<Cartcontext.Provider value={{clearcart,incart,removeCart,addToCart}}>
+<Cartcontext.Provider value={{clearcart,incart,removeCart,addToCart,preciototal,productTotal,cart}}>
     {children}
 </Cartcontext.Provider>
     )

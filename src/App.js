@@ -29,6 +29,7 @@ class app extends React.Component{
           </Routes>
           </CartProv>
         </BrowserRouter>
+        
       </div>
 
     )
