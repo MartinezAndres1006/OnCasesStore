@@ -1,0 +1,14 @@
+.FormContainer {
+    padding: 50px;
+    padding-bottom: 10px;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.btnASendAction{
+    justify-content: center;
+}
+.boton_seguir{
+    margin-left: 36%;
+    margin-top: 0%;
+}

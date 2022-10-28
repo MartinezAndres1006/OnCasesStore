@@ -5,12 +5,14 @@ import Itemcart from '../item/itemcart'
 import './cart.css'
 import {addDoc,collection,getFirestore} from 'firebase/firestore'
 import Swal from 'sweetalert2'
+import TextField from '@mui/material/TextField';
+import './form.css'
 const Cart = () => {
   const {cart,preciototal}=useContext(Cartcontext)
   
   const order ={
     buyer:{
-      name:"Juan",
+      name:"Juan Martinez",
       email:"miacontreras019@gmail.com",
       phone:"1123168224",
       addres:"galeno 1723,moreno"
@@ -27,7 +29,7 @@ addDoc(orderscollection,order)
 .then(({id}) => Swal.fire({
   position: 'top-center',
   icon: 'success',
-  title: 'Orden de envio'+id,
+  title: 'Su orden de envio es:\n'+id,
   showConfirmButton: false,
   timer: 1500
 })) 
@@ -51,10 +53,27 @@ return(
       <>
       {cart.map(product=><Itemcart key={product.id} product={product}/>)}
       <p className='card-title'>Total: {preciototal()}</p>
-      <button className='btn btn-dark boton_seguir' onClick={handleclick}>Orden de envio</button>
-      <Link to='/Form' className='btn btn-dark boton_seguir'><button>Finalizar Compra!</button></Link>
+      <form className='FormContainer'>
+     <h1 className='Titulo'>Ingresa tus datos</h1>
+          <TextField
+            value="Juan Martinez"
+            style={{ margin: 10, width: 400 }}
+            name='name'
+          />
+          <br></br>
+          <TextField
+            value='galeno 1723,moreno'
+            style={{ margin: 10, width: 400 }}
+            name='lastName'
+          />
+        </form>
+      <button className='btn btn-dark boton_seguir' onClick={handleclick}>Finalizar compra!</button>
+      <br></br>
       </>
     </div>
+     
+    
+
   )
 }
 
