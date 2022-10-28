@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Itemcart from '../item/itemcart'
 import './cart.css'
 import {addDoc,collection,getFirestore} from 'firebase/firestore'
-
+import Swal from 'sweetalert2'
 const Cart = () => {
   const {cart,preciototal}=useContext(Cartcontext)
   
@@ -24,7 +24,13 @@ const handleclick= ()=>{
   const db = getFirestore();
   const orderscollection = collection(db,'orders');
 addDoc(orderscollection,order)
-.then(({id}) => console.log(id)) 
+.then(({id}) => Swal.fire({
+  position: 'top-center',
+  icon: 'success',
+  title: 'Orden de envio'+id,
+  showConfirmButton: false,
+  timer: 1500
+})) 
 
 }
 
@@ -45,7 +51,8 @@ return(
       <>
       {cart.map(product=><Itemcart key={product.id} product={product}/>)}
       <p className='card-title'>Total: {preciototal()}</p>
-      <button onClick={handleclick}>Finalizar compra!</button>
+      <button className='btn btn-dark boton_seguir' onClick={handleclick}>Orden de envio</button>
+      <Link to='/Form' className='btn btn-dark boton_seguir'><button>Finalizar Compra!</button></Link>
       </>
     </div>
   )

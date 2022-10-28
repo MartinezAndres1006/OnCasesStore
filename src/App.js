@@ -8,6 +8,7 @@ import ItemListContainer from './components/item/itemListContainer';
 import ItemDetailContainer from './components/details/itemDetailContainer';
 import Cart from './components/cart/Cart';
 import CartProv from './context/cartContext';
+import Contact from './components/cart/Form';
 
 
 class app extends React.Component{
@@ -26,6 +27,7 @@ class app extends React.Component{
             <Route path='/category/:categoriaId' element={<ItemListContainer />}/>
             <Route path='/detail/:detailId' element={<ItemDetailContainer/>}/> 
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/Form' element={<Contact/>}/>
           </Routes>
           </CartProv>
         </BrowserRouter>
