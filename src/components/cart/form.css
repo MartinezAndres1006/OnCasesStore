@@ -9,6 +9,10 @@
     justify-content: center;
 }
 .boton_seguir{
-    margin-left: 36%;
+    margin-left: 50%;
     margin-top: 0%;
+}
+
+.seguir__comprando{
+    margin-left: 36%;
 }

@@ -41,7 +41,7 @@ return(
   <div className='container__vacio'>
     <h1 className='titulo__vacio'>El carrito esta vacio</h1>
     <p className='parrafo__vacio'>¿No sabés qué comprar? ¡Miles de productos te esperan!</p>
-    <Link to='/' className='btn btn-dark boton_seguir'>Seguir comprando</Link>
+    <Link to='/' className='btn btn-dark seguir__comprando'>Seguir comprando</Link>
   </div>
 )
   }
